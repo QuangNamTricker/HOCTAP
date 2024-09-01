@@ -1,0 +1,1 @@
+print("ĐÂY LÀ THÔNG BÁO ĐẦU TIÊN (THÔNG BÁO TEST CỦA TQN SAU KHI VIẾT TOOL)\nXIN CẢM ƠN SỰ ĐỒNG HÀNH CỦA CHATGPT GIÚP TÔI TẠO RA TOOL NÀY!!!")
