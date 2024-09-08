@@ -401,8 +401,8 @@ def main():
         ("4. Lý", Fore.GREEN, physics_mode),
         ("5. Hoá", Fore.GREEN, chemistry_mode),
         ("6. Sinh", Fore.GREEN, biology_mode),
-        ("7. Sử", Fore.GREEN, history_mode),
-        ("8. Địa", Fore.GREEN, geography_mode),
+        ("7. Sử (none)", Fore.GREEN, history_mode),
+        ("8. Địa (none)", Fore.GREEN, geography_mode),
 
 
         ("9. Thông Báo", Fore.CYAN, notification),
