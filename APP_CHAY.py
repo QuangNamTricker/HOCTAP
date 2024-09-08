@@ -130,36 +130,24 @@ def biology_mode():
     choose_teacher(teachers)
 
 #====================================================================================================================================================================
+def history_mode():
+    teachers = [
+            ("THẦY PHAN KHÁC NGHỆ", "https://raw.githubusercontent.com/QuangNamTricker/HOCTAP/main/MON_HOC/Sinh/PKN.py"),
+            ("THẦY TRƯƠNG CÔNG KIÊN", "https://raw.githubusercontent.com/QuangNamTricker/HOCTAP/main/MON_HOC/Sinh/TCK.py")
+    ]
+    choose_teacher(teachers)
+
+#====================================================================================================================================================================
+def geography_mode():
+    teachers = [
+            ("THẦY PHAN KHÁC NGHỆ", "https://raw.githubusercontent.com/QuangNamTricker/HOCTAP/main/MON_HOC/Sinh/PKN.py"),
+            ("THẦY TRƯƠNG CÔNG KIÊN", "https://raw.githubusercontent.com/QuangNamTricker/HOCTAP/main/MON_HOC/Sinh/TCK.py")
+    ]
+    choose_teacher(teachers)
+
 #====================================================================================================================================================================
 #====================================================================================================================================================================
 #====================================================================================================================================================================
-#====================================================================================================================================================================
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 def chrome_extensions():
     clear_screen()
     print_colored_text("""+--------------------------------------------------------------+
@@ -413,11 +401,15 @@ def main():
         ("4. Lý", Fore.GREEN, physics_mode),
         ("5. Hoá", Fore.GREEN, chemistry_mode),
         ("6. Sinh", Fore.GREEN, biology_mode),
-        ("7. Thông Báo", Fore.CYAN, notification),
-        ("8. Tool", Fore.CYAN, tools),
-        ("9. Extension Chrome Hữu Ích", Fore.CYAN, chrome_extensions),
-        ("10. ConTact US", Fore.CYAN, contact_us),
-        ("11. Exit", Fore.RED, exit_application)
+        ("7. Sử", Fore.GREEN, history_mode),
+        ("8. Địa", Fore.GREEN, geography_mode),
+
+
+        ("9. Thông Báo", Fore.CYAN, notification),
+        ("10. Tool", Fore.CYAN, tools),
+        ("11. Extension Chrome Hữu Ích", Fore.CYAN, chrome_extensions),
+        ("12. ConTact US", Fore.CYAN, contact_us),
+        ("13. Exit", Fore.RED, exit_application)
     ]
 
     while True:
@@ -443,14 +435,19 @@ def main():
         elif choice == "6":
             biology_mode()
         elif choice == "7":
-            notification()
+            history_mode()
         elif choice == "8":
-            tools()
+            geography_mode()
+
         elif choice == "9":
-            chrome_extensions()
+            notification()
         elif choice == "10":
-            contact_us()
+            tools()
         elif choice == "11":
+            chrome_extensions()
+        elif choice == "12":
+            contact_us()
+        elif choice == "13":
             exit_application()
             break
         else:
